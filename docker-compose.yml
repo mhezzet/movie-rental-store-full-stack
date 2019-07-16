@@ -1,0 +1,20 @@
+version: '3'
+services:
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: ./server
+    environment:
+      - DB_URI=mongodb+srv://mhezzet:7044446@mrs-cluster-78pgl.mongodb.net/test?retryWrites=true&w=majority
+      - JWT_SECRET=1234
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: ./app
+  proxy:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./proxy
+    ports:
+      - 5555:80

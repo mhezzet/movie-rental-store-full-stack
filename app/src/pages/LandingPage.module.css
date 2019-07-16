@@ -1,0 +1,27 @@
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(1,auto);
+}
+
+@media only screen and (min-width: 529px) {
+  .gallery {
+    grid-template-columns: repeat(2,auto);
+  }
+}
+
+@media only screen and (min-width: 937px) {
+  .gallery {
+    grid-template-columns: repeat(3,auto);
+  }
+}
+@media only screen and (min-width: 1437px) {
+  .gallery {
+    grid-template-columns: repeat(4,auto);
+  }
+}
+
+@media only screen and (min-width: 2187px) {
+  .gallery {
+    grid-template-columns: repeat(5,auto);
+  }
+}

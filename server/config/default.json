@@ -1,0 +1,6 @@
+{
+  "JWT_SECRET": "123",
+  "DB_URI": "mongodb://localhost:27017/movie_store",
+  "PORT": "3000",
+  "env": "development"
+}

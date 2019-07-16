@@ -1,0 +1,19 @@
+
+
+.overlay{
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:black;
+  opacity: 0;
+}
+
+.overlay:hover {
+opacity: 0.8;
+}
+
+
