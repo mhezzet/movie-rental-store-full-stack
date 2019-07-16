@@ -5,8 +5,9 @@ services:
       dockerfile: Dockerfile
       context: ./server
     environment:
-      - DB_URI=mongodb+srv://mhezzet:7044446@mrs-cluster-78pgl.mongodb.net/test?retryWrites=true&w=majority
-      - JWT_SECRET=1234
+      - DB_URI
+      - JWT_SECRET
+      - NODE_ENV=production
   app:
     build:
       dockerfile: Dockerfile
