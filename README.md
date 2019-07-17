@@ -1,2 +1,2 @@
 link:
-[movies.mhezzet.com](movies.mhezzet.com)
+[https://movies.mhezzet.com](https://movies.mhezzet.com)
